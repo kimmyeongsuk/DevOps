@@ -113,3 +113,8 @@ docker compose down -v      # 볼륨까지 삭제
 | `REDIS_HOST` | (없음) | 있으면 Redis 모드 |
 | `REDIS_PORT` | 6379 | |
 | `REDIS_PASSWORD` | (없음) | |
+
+## 실행 이미지
+
+
+<img width="912" height="607" alt="도커6주차" src="https://github.com/user-attachments/assets/399cc26c-c2c7-49b0-a2e3-01de05bf2a6e" />
