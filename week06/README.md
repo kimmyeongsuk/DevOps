@@ -8,7 +8,8 @@
 
 ## 2. 친구 이미지 실행 결과
 
----
+---<img width="882" height="593" alt="image" src="https://github.com/user-attachments/assets/5fb2fef8-6687-4dd9-b8a2-30be1d54a8b8" />
+
 
 ## 3. Dockerfile 명령어 설명
 
