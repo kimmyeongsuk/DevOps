@@ -1,3 +1,3 @@
-FROM ghcr.io/kimmyeongsuk/inhatc-devops-guestbook:v1
+FROM ghcr.io/leehogun/inhatc-devops-guestbook:v1
 ENV APP_TITLE="방명록" \
     THEME_COLOR="#7C9A82"
