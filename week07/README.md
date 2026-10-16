@@ -50,11 +50,11 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-4. .env를 Git에 올리지 않는 이유
+# 4. .env를 Git에 올리지 않는 이유
 
 -----------------------------------------
 
-1) 보안 민감 정보 유출 방지 (Security)
+1. 보안 민감 정보 유출 방지 (Security)
 
    - .env 파일에는 REDIS_PASSWORD와 같은 데이터베이스 비밀번호, API 키, 시크릿 키 등 주요 보안 데이터가 저장됩니다.
 
@@ -62,7 +62,7 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-2) 환경별 설정 분리 (Environment Isolation)
+2. 환경별 설정 분리 (Environment Isolation)
 
    - 개발(Development), 테스트(Testing), 운영(Production) 환경마다 사용하는 비밀번호, 포트, DB 주소 등이 서로 다릅니다.
 
