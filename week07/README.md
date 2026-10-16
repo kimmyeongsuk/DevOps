@@ -18,7 +18,7 @@ guestbook-web-2     guestbook-web   "python app.py"          web       10 second
 
 guestbook-web-3     guestbook-web   "python app.py"          web       10 seconds ago Up 10 seconds (healthy)
 
-
+2. 
 
 
 
@@ -26,7 +26,7 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 -----------------------------------------
 
-[1] docker compose down 후 up
+# docker compose down 후 up
 
 - 볼륨 삭제 여부: 볼륨(redis-data)을 삭제하지 않고 유지함
 
@@ -36,7 +36,7 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-[2] docker compose down -v 후 up
+# docker compose down -v 후 up
 
 - 볼륨 삭제 여부: -v 옵션에 의해 볼륨(redis-data)도 함께 삭제됨
 
