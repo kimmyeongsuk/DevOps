@@ -1,4 +1,4 @@
-1. docker compose ps 결과 (healthy 포함)
+# 1. docker compose ps 결과 (healthy 포함)
 
 -----------------------------------------
 
@@ -18,15 +18,17 @@ guestbook-web-2     guestbook-web   "python app.py"          web       10 second
 
 guestbook-web-3     guestbook-web   "python app.py"          web       10 seconds ago Up 10 seconds (healthy)
 
-2. 
+# 2.  scale 후 각 웹 컨테이너 호스트명(컨테이너 ID)이 바뀐 화면 결과 (캡처)
+
+<img width="927" height="190" alt="image" src="https://github.com/user-attachments/assets/51c90fd3-dd9e-4078-bb32-5c33edeafdd5" />
 
 
 
-3. down 후 up과 down -v 후 up 차이 비교
+# 3. down 후 up과 down -v 후 up 차이 비교
 
 -----------------------------------------
 
-# docker compose down 후 up
+1. docker compose down 후 up
 
 - 볼륨 삭제 여부: 볼륨(redis-data)을 삭제하지 않고 유지함
 
@@ -36,7 +38,7 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-# docker compose down -v 후 up
+2. docker compose down -v 후 up
 
 - 볼륨 삭제 여부: -v 옵션에 의해 볼륨(redis-data)도 함께 삭제됨
 
