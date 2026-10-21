@@ -10,11 +10,10 @@
         └── README.md    # 주차별 학습 내용 및 실습 기록
 ```[cite: 14, 22]
 
----
 
 ## 실습 환경 구성 및 준비
 
-## 1. Ollama 및 Qwen 모델 다운로드
+### 1. Ollama 및 Qwen 모델 다운로드
 - **Ollama 설치**:
   ```bash
   curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
@@ -31,28 +30,28 @@
 
 ---
 
-# 셸 스크립트 작성 및 핵심 개념 설명
+## 셸 스크립트 작성 및 핵심 개념 설명
 
-# 1. `start.sh` 스크립트
+### 1. `start.sh` 스크립트
 ```bash
 #!/bin/bash
 
-# 1. 스크립트가 위치한 디렉터리로 절대 경로 이동
+### 1. 스크립트가 위치한 디렉터리로 절대 경로 이동
 cd "$(dirname "$0")" || exit 1
 
-# 2. Python3 설치 여부 검사 (조건문 및 리다이렉션)
+### 2. Python3 설치 여부 검사 (조건문 및 리다이렉션)
 if ! command -v python3 >/dev/null 2>&1; then
     echo "Error: Python3가 설치되어 있지 않습니다." >&2
     exit 1
 fi
 
-# 3. 애플리케이션 실행 (프로세스 대체)
+### 3. 애플리케이션 실행 (프로세스 대체)
 exec python3 chat.py
 ```[cite: 33, 41, 48]
 
 ---
 
-### 셸 스크립트 핵심 개념 정리
+## 셸 스크립트 핵심 개념 정리
 
 1. **Shebang (`#!/bin/bash`)**
    - 스크립트 맨 첫 줄에 작성하여 해당 파일을 해석할 인터프리터를 지정합니다[cite: 34].
