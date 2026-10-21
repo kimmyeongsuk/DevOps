@@ -1,34 +1,23 @@
 # 02. 셸 스크립팅과 로컬 AI 서비스 자동화 (3주차)
 
 # 디렉터리 구조
-```text
 ~/devops/
 └── week03/
     └── qwen-web/
         ├── chat.py      # Python 웹 서버 스크립트 (8000/8080 포트)
         ├── start.sh     # 메인 실행 셸 스크립트
         └── README.md    # 주차별 학습 내용 및 실습 기록
-```[cite: 14, 22]
-
-
 # 실습 환경 구성 및 준비
 
  1. Ollama 및 Qwen 모델 다운로드
 - **Ollama 설치**:
-  ```bash
   curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
-  ```[cite: 15]
 - **Qwen3 (0.6B) 모델 다운로드 및 확인**:
-  ```bash
   ollama pull qwen3:0.6b
   ollama list
-  ```[cite: 18]
 - **API 동작 검증**:
-  ```bash
   curl -fsS [http://127.0.0.1:11434/api/tags](http://127.0.0.1:11434/api/tags)
-  ```[cite: 17]
 
----
 
 # 셸 스크립트 작성 및 핵심 개념 설명
 
