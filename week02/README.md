@@ -1,6 +1,6 @@
 # 02. 셸 스크립팅과 로컬 AI 서비스 자동화 (3주차)
 
-# 디렉터리 구조
+## 디렉터리 구조
 ```text
 ~/devops/
 └── week03/
@@ -12,9 +12,9 @@
 
 ---
 
-# 실습 환경 구성 및 준비
+## 실습 환경 구성 및 준비
 
-# 1. Ollama 및 Qwen 모델 다운로드
+## 1. Ollama 및 Qwen 모델 다운로드
 - **Ollama 설치**:
   ```bash
   curl -fsSL [https://ollama.com/install.sh](https://ollama.com/install.sh) | sh
