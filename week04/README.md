@@ -30,7 +30,6 @@ curl ifconfig.me         # 공인 IP 확인
 # ICMP 패킷을 통한 대상 서버 통신 확인
 ping -c 4 8.8.8.8
 ping -c 4 cs.inhatc.ac.kr
-```[cite: 116, 117]
 > **주의**: 방화벽에서 ICMP(ping)를 차단하더라도 웹 서비스는 정상 작동 중일 수 있습니다[cite: 117].
 
 ### 2) DNS 조회 (`dig`, `nslookup`)
