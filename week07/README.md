@@ -1,4 +1,4 @@
-1. docker compose ps 결과 (healthy 포함)
+# 1. docker compose ps 결과 (healthy 포함)
 
 -----------------------------------------
 
@@ -18,15 +18,17 @@ guestbook-web-2     guestbook-web   "python app.py"          web       10 second
 
 guestbook-web-3     guestbook-web   "python app.py"          web       10 seconds ago Up 10 seconds (healthy)
 
+# 2.  scale 후 각 웹 컨테이너 호스트명(컨테이너 ID)이 바뀐 화면 결과 (캡처)
+
+<img width="927" height="190" alt="image" src="https://github.com/user-attachments/assets/51c90fd3-dd9e-4078-bb32-5c33edeafdd5" />
 
 
 
-
-3. down 후 up과 down -v 후 up 차이 비교
+# 3. down 후 up과 down -v 후 up 차이 비교
 
 -----------------------------------------
 
-[1] docker compose down 후 up
+1. docker compose down 후 up
 
 - 볼륨 삭제 여부: 볼륨(redis-data)을 삭제하지 않고 유지함
 
@@ -36,7 +38,7 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-[2] docker compose down -v 후 up
+2. docker compose down -v 후 up
 
 - 볼륨 삭제 여부: -v 옵션에 의해 볼륨(redis-data)도 함께 삭제됨
 
@@ -48,11 +50,11 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-4. .env를 Git에 올리지 않는 이유
+# 4. .env를 Git에 올리지 않는 이유
 
 -----------------------------------------
 
-1) 보안 민감 정보 유출 방지 (Security)
+1. 보안 민감 정보 유출 방지 (Security)
 
    - .env 파일에는 REDIS_PASSWORD와 같은 데이터베이스 비밀번호, API 키, 시크릿 키 등 주요 보안 데이터가 저장됩니다.
 
@@ -60,7 +62,7 @@ guestbook-web-3     guestbook-web   "python app.py"          web       10 second
 
 
 
-2) 환경별 설정 분리 (Environment Isolation)
+2. 환경별 설정 분리 (Environment Isolation)
 
    - 개발(Development), 테스트(Testing), 운영(Production) 환경마다 사용하는 비밀번호, 포트, DB 주소 등이 서로 다릅니다.
 
